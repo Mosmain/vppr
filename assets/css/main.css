@@ -1083,7 +1083,7 @@ p {
 }
 
 .navbar-brand img {
-    width: 100px
+    width: 80px
 }
 
 .navbar-toggler {
@@ -1123,7 +1123,7 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .navbar-collapse {
         position: absolute;
-        top: 165% !important;
+        top: 120% !important;
         left: 0;
         width: 100%;
         background-color: #fff;
@@ -1182,10 +1182,6 @@ p {
         display: flex;
         justify-content: space-between;
         padding: 10px 0
-    }
-
-    .nav-inner {
-        padding: 25px 0
     }
 }
 

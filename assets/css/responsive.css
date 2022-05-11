@@ -5,6 +5,11 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .navbar-brand a{
+
+    }
+
     .section {
         padding: 60px 0
     }
@@ -696,7 +701,7 @@
         height: 197px;
         width: 100%
     }
-    
+
 
     .testimonials .tns-nav {
         background: #ffffffb3;
