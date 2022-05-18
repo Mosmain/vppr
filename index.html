@@ -1,373 +1,443 @@
-<!DOCTYPE html>
-<html class="no-js" lang="ru">
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>ВППР - Вторая Пивная Партия России</title>
-    <meta name="description" content=""/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo.svg"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+<style>
+    body {
+        background: black;
+    }
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        animation-duration: .5s;
+        background-color: grey;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css"/>
-    <link rel="stylesheet" href="assets/css/animate.css"/>
-    <link rel="stylesheet" href="assets/css/tiny-slider.css"/>
-    <link rel="stylesheet" href="assets/css/glightbox.min.css"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <link rel="stylesheet" href="assets/css/reset.css"/>
-    <link rel="stylesheet" href="assets/css/responsive.css"/>
-</head>
-<body>
-<!--[if lte IE 9]>
-<p class="browserupgrade">
-    You are using an <strong>outdated</strong> browser. Please
-    <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-    your experience and security.
-</p>
-<![endif]-->
+    hr {
+        width: 80%;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
 
-<div class="preloader">
-    <div class="preloader-inner">
-        <div class="preloader-icon">
-            <span></span>
-            <span></span>
+    h1 {
+        color: white;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-content: end;
+        width: 80%;
+    }
+
+    button {
+        color: white;
+        text-align: center;
+        position: relative !important;
+        width: 100%;
+
+    }
+
+    button:hover {
+        color: lightgrey;
+        text-decoration: none;
+    }
+</style>
+
+<div class="container">
+    <div class="main col">
+        <h1>ВППР мертв, Вы его убили.<br>Продолжения не будет,<br>к выходным будет пусто,<br>гарантирую.</h1>
+        <div class="btn">
+            <button class="btn btn-outline-light" onclick="window.close();"><h4>Забыть</h4></button>
         </div>
     </div>
 </div>
 
 
-<header class="header navbar-area">
-
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-12">
-                <div class="nav-inner">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.svg" alt="Logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                            <span class="toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                            <ul id="nav" class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="page-scroll active" href="index.html">Главная</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll" href="/">Состав партии</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="page-scroll" href="/">Цель партии</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="button">
-                            <a href="/" class="btn white-bg mouse-dir">ПОЗНАТЬ БАЗУ<span
-                                    class="dir-part"></span></a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+<!--<!DOCTYPE html>-->
+<!--<html class="no-js" lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="utf-8"/>-->
+<!--    <meta http-equiv="x-ua-compatible" content="ie=edge"/>-->
+<!--    <title>ВППР - Вторая Пивная Партия России</title>-->
+<!--    <meta name="description" content=""/>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+<!--    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo.svg"/>-->
 
 
-<section class="hero-slider">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"-->
+<!--          rel="stylesheet">-->
 
-    <div class="single-slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 co-12">
-                    <div class="home-info">
-                        <div class="hero-text">
-                            <span class="small-title">Только вперед, только ВППР!</span>
-                            <h1><span>Вторая Пивна<br>Партия России</span><br> Сила в Базе</h1>
-                            <p>Лучшие умы подсасовкского чата объединились в один большой костяк <br> с целью построить
-                                мир и гармонию, где главное действующее лицо пиво! <br> А также мемы про саса и где
-                                актив?</p>
-                            <div class="button">
-                                <a href="/" class="btn mouse-dir">Наши сопартийцы <span
-                                        class="dir-part"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/animate.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/tiny-slider.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/glightbox.min.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/main.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/reset.css"/>-->
+<!--    <link rel="stylesheet" href="assets/css/responsive.css"/>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash;[if lte IE 9]>-->
+<!--<p class="browserupgrade">-->
+<!--    You are using an <strong>outdated</strong> browser. Please-->
+<!--    <a href="https://browsehappy.com/">upgrade your browser</a> to improve-->
+<!--    your experience and security.-->
+<!--</p>-->
+<!--<![endif]&ndash;&gt;-->
 
-</section>
-
-<section class="section testimonials">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-12">
-                <div class="section-title">
-                    <span class="wow fadeInDown" data-wow-delay=".2s">УЗРИ, ТОВАРИЩ</span>
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Рецензия Сопартийца</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s">Каждый сопартиец составил свое мнение о нашей
-                        партии<br>и
-                        готов поделиться им с тобой.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class=" col-12">
-                <div class="testimonial-slider">
-
-                    <div class="single-testimonial">
-                        <div class="client1"></div>
-                        <i class="lni lni-quotation"></i>
-                        <p>У у у у у у у у у у у у у у у у у у</p>
-                        <div class="bottom">
-                            <h4 class="name">D<span>Спамер года</span></h4>
-                        </div>
-                    </div>
+<!--<div class="preloader">-->
+<!--    <div class="preloader-inner">-->
+<!--        <div class="preloader-icon">-->
+<!--            <span></span>-->
+<!--            <span></span>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 
 
-                    <div class="single-testimonial">
-                        <div class="client2"></div>
-                        <i class="lni lni-quotation"></i>
-                        <p>Меня зовут Дед<br>Не верьте окружающим, тут одни предатели</p>
-                        <div class="bottom">
-                            <h4 class="name">Дед K3r41k<span>Лучший дед</span></h4>
-                        </div>
-                    </div>
+<!--<header class="header navbar-area">-->
+
+<!--    <div class="container">-->
+<!--        <div class="row align-items-center">-->
+<!--            <div class="col-lg-12">-->
+<!--                <div class="nav-inner">-->
+<!--                    <nav class="navbar navbar-expand-lg">-->
+<!--                        <a class="navbar-brand" href="index.html">-->
+<!--                            <img src="assets/images/logo.svg" alt="Logo">-->
+<!--                        </a>-->
+<!--                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"-->
+<!--                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"-->
+<!--                                aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                            <span class="toggler-icon"></span>-->
+<!--                            <span class="toggler-icon"></span>-->
+<!--                            <span class="toggler-icon"></span>-->
+<!--                        </button>-->
+<!--                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">-->
+<!--                            <ul id="nav" class="navbar-nav ms-auto">-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="page-scroll active" href="index.html">Главная</a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="page-scroll" href="/">Состав партии</a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="page-scroll" href="/">Цель партии</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <div class="button">-->
+<!--                            <a href="/" class="btn white-bg mouse-dir">ПОЗНАТЬ БАЗУ<span-->
+<!--                                    class="dir-part"></span></a>-->
+<!--                        </div>-->
+<!--                    </nav>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
 
 
-                    <div class="single-testimonial">
-                        <div class="client3"></div>
-                        <i class="lni lni-quotation"></i>
-                        <p>Партия плохая, много натуралов, так же меня наебали, отобрали мою партию.. Почему я тут?
-                            Потому что.</p>
-                        <div class="bottom">
-                            <h4 class="name">Deys Furer ☭<span>CumChatKa</span></h4>
-                        </div>
-                    </div>
+<!--<section class="hero-slider">-->
+
+<!--    <div class="single-slider">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-6 co-12">-->
+<!--                    <div class="home-info">-->
+<!--                        <div class="hero-text">-->
+<!--                            <span class="small-title">Только вперед, только ВППР!</span>-->
+<!--                            <h1><span>Вторая Пивна<br>Партия России</span><br> Сила в Базе</h1>-->
+<!--                            <p>Лучшие умы подсасовкского чата объединились в один большой костяк <br> с целью построить-->
+<!--                                мир и гармонию, где главное действующее лицо пиво! <br> А также мемы про саса и где-->
+<!--                                актив?</p>-->
+<!--                            <div class="button">-->
+<!--                                <a href="/" class="btn mouse-dir">Наши сопартийцы <span-->
+<!--                                        class="dir-part"></span></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</section>-->
+
+<!--<section class="section testimonials">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-8 offset-lg-2 col-12">-->
+<!--                <div class="section-title">-->
+<!--                    <span class="wow fadeInDown" data-wow-delay=".2s">УЗРИ, ТОВАРИЩ</span>-->
+<!--                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Рецензия Сопартийца</h2>-->
+<!--                    <p class="wow fadeInUp" data-wow-delay=".6s">Каждый сопартиец составил свое мнение о нашей-->
+<!--                        партии<br>и-->
+<!--                        готов поделиться им с тобой.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class=" col-12">-->
+<!--                <div class="testimonial-slider">-->
+
+<!--                    <div class="single-testimonial">-->
+<!--                        <div class="client1"></div>-->
+<!--                        <i class="lni lni-quotation"></i>-->
+<!--                        <p>У у у у у у у у у у у у у у у у у у</p>-->
+<!--                        <div class="bottom">-->
+<!--                            <h4 class="name">D<span>Спамер года</span></h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
 
-                    <div class="single-testimonial">
-                        <div class="client4"></div>
-                        <i class="lni lni-quotation"></i>
-                        <p>«Вторая Пивная Партия России» является самой перспективной, рентабельной и лучшей партией в
-                            России, ведь представляет собой сочетание из учения Карла Маркса и Фридриха Энгельса и идеи
-                            общества, построенной на употреблении слабоалкогольного напитка, пива, и занятии
-                            спортом.</p>
-                        <div class="bottom">
-                            <h4 class="name">regreek<span>Нчп эксперт</span></h4>
-                        </div>
-                    </div>
+<!--                    <div class="single-testimonial">-->
+<!--                        <div class="client2"></div>-->
+<!--                        <i class="lni lni-quotation"></i>-->
+<!--                        <p>Меня зовут Дед<br>Не верьте окружающим, тут одни предатели</p>-->
+<!--                        <div class="bottom">-->
+<!--                            <h4 class="name">Дед K3r41k<span>Лучший дед</span></h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
 
-                    <div class="single-testimonial">
-                        <div class="client5"></div>
-                        <i class="lni lni-quotation"></i>
-                        <p>Можно шутить только про украинских детей. Ведь они еда.</p>
-                        <div class="bottom">
-                            <h4 class="name">IjustwanttodieinLA<span>Ге(ни)й и творец</span></h4>
-                        </div>
-                    </div>
+<!--                    <div class="single-testimonial">-->
+<!--                        <div class="client3"></div>-->
+<!--                        <i class="lni lni-quotation"></i>-->
+<!--                        <p>Партия плохая, много натуралов, так же меня наебали, отобрали мою партию.. Почему я тут?-->
+<!--                            Потому что.</p>-->
+<!--                        <div class="bottom">-->
+<!--                            <h4 class="name">Deys Furer ☭<span>CumChatKa</span></h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
 
-                    <div class="single-testimonial">
-                        <div class="client6"></div>
-                        <i class="lni lni-quotation"></i>
-                        <p>ну напиши что-нибудь типо «главная подпивасница, выдающая базу факаперша ВППР»</p>
-                        <div class="bottom">
-                            <h4 class="name">Лизонька<span>просто Лизонька</span></h4>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <img class="shape1 wow fadeInLeft" data-wow-delay=".8s" src="assets/images/testi-shape1.png" alt="#">
-</section>
-
-<footer class="footer">
-
-    <div class="footer-middle">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="f-about single-footer">
-                        <div class="logo">
-                            <a href="index.html"><img src="assets/images/logo.svg" alt="#"></a>
-                            <p>Владимир Владимирович, если вы это читаете, пожалуйста, не бейте автора репозитория по жопе,
-                                лучше вступите!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--                    <div class="single-testimonial">-->
+<!--                        <div class="client4"></div>-->
+<!--                        <i class="lni lni-quotation"></i>-->
+<!--                        <p>«Вторая Пивная Партия России» является самой перспективной, рентабельной и лучшей партией в-->
+<!--                            России, ведь представляет собой сочетание из учения Карла Маркса и Фридриха Энгельса и идеи-->
+<!--                            общества, построенной на употреблении слабоалкогольного напитка, пива, и занятии-->
+<!--                            спортом.</p>-->
+<!--                        <div class="bottom">-->
+<!--                            <h4 class="name">regreek<span>Нчп эксперт</span></h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
 
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="inner">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="left">
-                            <p>Создано и разработано<a href="t.me/mosmain" rel="nofollow" target="_blank">Mosmain</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="right">
-                            <p>Все права украдены партией ВППР</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</footer>
+<!--                    <div class="single-testimonial">-->
+<!--                        <div class="client5"></div>-->
+<!--                        <i class="lni lni-quotation"></i>-->
+<!--                        <p>Можно шутить только про украинских детей. Ведь они еда.</p>-->
+<!--                        <div class="bottom">-->
+<!--                            <h4 class="name">IjustwanttodieinLA<span>Ге(ни)й и творец</span></h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
 
-<a href="index.html#" class="scroll-top btn-hover">
-    <i class="lni lni-chevron-up"></i>
-</a>
+<!--                    <div class="single-testimonial">-->
+<!--                        <div class="client6"></div>-->
+<!--                        <i class="lni lni-quotation"></i>-->
+<!--                        <p>ну напиши что-нибудь типо «главная подпивасница, выдающая базу факаперша ВППР»</p>-->
+<!--                        <div class="bottom">-->
+<!--                            <h4 class="name">Лизонька<span>просто Лизонька</span></h4>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/count-up.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/tiny-slider.js"></script>
-<script src="assets/js/glightbox.min.js"></script>
-<script src="assets/js/imagesloaded.min.js"></script>
-<script src="assets/js/isotope.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script type="text/javascript">
-    //========= glightbox
-    GLightbox({
-        'href': 'https://www.youtube.com/watch?v=BqI0Q7e4kbk&t=1s',
-        'type': 'video',
-        'source': 'youtube', //vimeo, youtube or local
-        'width': 900,
-        'autoplayVideos': true,
-    });
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <img class="shape1 wow fadeInLeft" data-wow-delay=".8s" src="assets/images/testi-shape1.png" alt="#">-->
+<!--</section>-->
 
-    //====== Clients Logo Slider
-    tns({
-        container: '.client-logo-carousel',
-        slideBy: 'page',
-        autoplay: true,
-        autoplayButtonOutput: false,
-        mouseDrag: true,
-        gutter: 15,
-        nav: false,
-        controls: false,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            540: {
-                items: 2,
-            },
-            768: {
-                items: 3,
-            },
-            992: {
-                items: 4,
-            },
-            1170: {
-                items: 6,
-            }
-        }
-    });
+<!--<footer class="footer">-->
 
-    //======== Home Slider
-    var slider = new tns({
-        container: '.home-slider',
-        slideBy: 'page',
-        autoplay: false,
-        mouseDrag: true,
-        gutter: 0,
-        items: 1,
-        nav: true,
-        controls: false,
-        controlsText: [
-            '<i class="lni lni-arrow-left prev"></i>',
-            '<i class="lni lni-arrow-right next"></i>'
-        ],
-        responsive: {
-            1200: {
-                items: 1,
-            },
-            992: {
-                items: 1,
-            },
-            0: {
-                items: 1,
-            }
+<!--    <div class="footer-middle">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="f-about single-footer">-->
+<!--                        <div class="logo">-->
+<!--                            <a href="index.html"><img src="assets/images/logo.svg" alt="#"></a>-->
+<!--                            <p>Владимир Владимирович, если вы это читаете, пожалуйста, не бейте автора репозитория по жопе,-->
+<!--                                лучше вступите!</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-        }
-    });
 
-    //======== Testimonial Slider
-    var slider = new tns({
-        container: '.testimonial-slider',
-        slideBy: 'page',
-        autoplay: false,
-        mouseDrag: true,
-        gutter: 0,
-        items: 1,
-        nav: true,
-        controls: false,
-        controlsText: [
-            '<i class="lni lni-arrow-left prev"></i>',
-            '<i class="lni lni-arrow-right next"></i>'
-        ],
-        responsive: {
-            1200: {
-                items: 2,
-            },
-            992: {
-                items: 1,
-            },
-            0: {
-                items: 1,
-            }
+<!--    <div class="footer-bottom">-->
+<!--        <div class="container">-->
+<!--            <div class="inner">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-6 col-md-6 col-12">-->
+<!--                        <div class="left">-->
+<!--                            <p>Создано и разработано<a href="t.me/mosmain" rel="nofollow" target="_blank">Mosmain</a>-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-6 col-md-6 col-12">-->
+<!--                        <div class="right">-->
+<!--                            <p>Все права украдены партией ВППР</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-        }
-    });
+<!--</footer>-->
 
-    //============== isotope masonry js with imagesloaded
-    imagesLoaded('#container', function () {
-        var elem = document.querySelector('.grid');
-        var iso = new Isotope(elem, {
-            // options
-            itemSelector: '.grid-item',
-            masonry: {
-                // use outer width of grid-sizer for columnWidth
-                columnWidth: '.grid-item'
-            }
-        });
 
-        let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
-        filterButtons.forEach(e =>
-            e.addEventListener('click', () => {
+<!--<a href="index.html#" class="scroll-top btn-hover">-->
+<!--    <i class="lni lni-chevron-up"></i>-->
+<!--</a>-->
 
-                let filterValue = event.target.getAttribute('data-filter');
-                iso.arrange({
-                    filter: filterValue
-                });
-            })
-        );
-    });
-</script>
-</body>
-</html>
+<!--<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>-->
+<!--<script src="assets/js/bootstrap.min.js"></script>-->
+<!--<script src="assets/js/count-up.min.js"></script>-->
+<!--<script src="assets/js/wow.min.js"></script>-->
+<!--<script src="assets/js/tiny-slider.js"></script>-->
+<!--<script src="assets/js/glightbox.min.js"></script>-->
+<!--<script src="assets/js/imagesloaded.min.js"></script>-->
+<!--<script src="assets/js/isotope.min.js"></script>-->
+<!--<script src="assets/js/main.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--    //========= glightbox-->
+<!--    GLightbox({-->
+<!--        'href': 'https://www.youtube.com/watch?v=BqI0Q7e4kbk&t=1s',-->
+<!--        'type': 'video',-->
+<!--        'source': 'youtube', //vimeo, youtube or local-->
+<!--        'width': 900,-->
+<!--        'autoplayVideos': true,-->
+<!--    });-->
+
+<!--    //====== Clients Logo Slider-->
+<!--    tns({-->
+<!--        container: '.client-logo-carousel',-->
+<!--        slideBy: 'page',-->
+<!--        autoplay: true,-->
+<!--        autoplayButtonOutput: false,-->
+<!--        mouseDrag: true,-->
+<!--        gutter: 15,-->
+<!--        nav: false,-->
+<!--        controls: false,-->
+<!--        responsive: {-->
+<!--            0: {-->
+<!--                items: 1,-->
+<!--            },-->
+<!--            540: {-->
+<!--                items: 2,-->
+<!--            },-->
+<!--            768: {-->
+<!--                items: 3,-->
+<!--            },-->
+<!--            992: {-->
+<!--                items: 4,-->
+<!--            },-->
+<!--            1170: {-->
+<!--                items: 6,-->
+<!--            }-->
+<!--        }-->
+<!--    });-->
+
+<!--    //======== Home Slider-->
+<!--    var slider = new tns({-->
+<!--        container: '.home-slider',-->
+<!--        slideBy: 'page',-->
+<!--        autoplay: false,-->
+<!--        mouseDrag: true,-->
+<!--        gutter: 0,-->
+<!--        items: 1,-->
+<!--        nav: true,-->
+<!--        controls: false,-->
+<!--        controlsText: [-->
+<!--            '<i class="lni lni-arrow-left prev"></i>',-->
+<!--            '<i class="lni lni-arrow-right next"></i>'-->
+<!--        ],-->
+<!--        responsive: {-->
+<!--            1200: {-->
+<!--                items: 1,-->
+<!--            },-->
+<!--            992: {-->
+<!--                items: 1,-->
+<!--            },-->
+<!--            0: {-->
+<!--                items: 1,-->
+<!--            }-->
+
+<!--        }-->
+<!--    });-->
+
+<!--    //======== Testimonial Slider-->
+<!--    var slider = new tns({-->
+<!--        container: '.testimonial-slider',-->
+<!--        slideBy: 'page',-->
+<!--        autoplay: false,-->
+<!--        mouseDrag: true,-->
+<!--        gutter: 0,-->
+<!--        items: 1,-->
+<!--        nav: true,-->
+<!--        controls: false,-->
+<!--        controlsText: [-->
+<!--            '<i class="lni lni-arrow-left prev"></i>',-->
+<!--            '<i class="lni lni-arrow-right next"></i>'-->
+<!--        ],-->
+<!--        responsive: {-->
+<!--            1200: {-->
+<!--                items: 2,-->
+<!--            },-->
+<!--            992: {-->
+<!--                items: 1,-->
+<!--            },-->
+<!--            0: {-->
+<!--                items: 1,-->
+<!--            }-->
+
+<!--        }-->
+<!--    });-->
+
+<!--    //============== isotope masonry js with imagesloaded-->
+<!--    imagesLoaded('#container', function () {-->
+<!--        var elem = document.querySelector('.grid');-->
+<!--        var iso = new Isotope(elem, {-->
+<!--            // options-->
+<!--            itemSelector: '.grid-item',-->
+<!--            masonry: {-->
+<!--                // use outer width of grid-sizer for columnWidth-->
+<!--                columnWidth: '.grid-item'-->
+<!--            }-->
+<!--        });-->
+
+<!--        let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');-->
+<!--        filterButtons.forEach(e =>-->
+<!--            e.addEventListener('click', () => {-->
+
+<!--                let filterValue = event.target.getAttribute('data-filter');-->
+<!--                iso.arrange({-->
+<!--                    filter: filterValue-->
+<!--                });-->
+<!--            })-->
+<!--        );-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
