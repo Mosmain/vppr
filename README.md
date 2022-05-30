@@ -1,1 +1,1 @@
-## https://mosmain.github.io/vppr.github.io/
+## https://mosmain.github.io/vppr/
